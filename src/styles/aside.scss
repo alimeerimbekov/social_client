@@ -1,0 +1,31 @@
+.aside {
+  padding: 0 15px;
+  width: 15%;
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding: 4px 0;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    span{
+      svg{
+        fill: #0050b3;
+        font-size: 20px;
+      }
+    }
+
+    &:hover {
+      background: #8C8C8C;
+    }
+  }
+}

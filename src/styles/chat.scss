@@ -1,0 +1,97 @@
+.chat {
+  width: 85%;
+
+  &__content {
+    width: 100%;
+    height: calc(100vh - 158px);
+    border-radius: 20px;
+    background: #222222;
+    display: flex;
+  }
+
+  &__sidebar {
+    width: 30%;
+    position: relative;
+
+    &::before {
+      content: '';
+      top: 0;
+      right: 0;
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      background: #FFFFFF70;
+    }
+  }
+
+  &__block {
+    width: 70%;
+    height: 100%;
+    position: relative;
+
+    &-top {
+      display: flex;
+      height: 80px;
+      padding: 0 20px;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #FFFFFF70;
+    }
+
+    &-bottom {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 80px;
+      border-top: 1px solid #FFFFFF70;
+      padding: 20px;
+    }
+
+    &-field {
+      padding: 0 35px 0 15px !important;
+    }
+
+    &-emoji {
+      position: absolute;
+      right: 30px;
+      top: 25px;
+      z-index: 10;
+      cursor: pointer;
+
+      &-block {
+        top: -460px;
+      }
+    }
+  }
+
+  &__search {
+    border-bottom: 1px solid #FFFFFF70;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  &__friends {
+    padding: 20px;
+    display: flex;
+    column-gap: 20px;
+    border-bottom: 1px solid #FFFFFF70;
+
+    &-avatar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-name {
+      font-size: 12px;
+    }
+  }
+
+  &__list {
+    padding: 15px;
+  }
+
+}

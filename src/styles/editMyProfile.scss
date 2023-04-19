@@ -1,0 +1,83 @@
+.editMyProfile {
+  width: 85%;
+
+  &__home {
+    width: 65%;
+
+    &-top {
+      background: #222222;
+      border-radius: 20px 20px 0 0;
+      padding: 20px 30px 25px;
+    }
+
+    &-bg {
+      height: 150px;
+    }
+
+    &-img {
+      top: 50px;
+    }
+
+    &-bottom {
+      height: 100px;
+    }
+
+    &-right {
+      display: flex;
+      column-gap: 0;
+    }
+
+    &-user {
+      row-gap: 10px;
+    }
+  }
+
+  &__content {
+    background: #222222;
+    padding: 20px 50px 20px 30px;
+    border: 1px solid #8C8C8C;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  &__card {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+    &-selected {
+      display: flex;
+      flex-direction: row;
+      column-gap: 10px;
+      width: 60%;
+    }
+  }
+
+  &__label {
+    width: 40%;
+    max-width: 200px;
+    text-align: right;
+    color: #939393;
+  }
+
+  &__field {
+    background: #4a4848;
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 60%;
+    border: 1px solid #8C8C8C;
+    padding: 7px;
+  }
+
+  &__btns {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #939393;
+    margin-top: 10px  ;
+  }
+
+
+}
